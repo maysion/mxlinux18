@@ -1,1 +1,3 @@
 Pvm     Teht                            Min
+3.6.19	Projektiesityksen laatiminen	60
+3.6.19	Projektiesityksen tarkistutt.	15
