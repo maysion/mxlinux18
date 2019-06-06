@@ -4,3 +4,4 @@ Pvm     Teht                            Min
 3.6.19  Pro.suunnitelman laatimista    100
 4.6.19  Pro.suunnitelman viimeistely    90
 6.6.19  Palaverimuistion laatiminen x2  50
+6.6.19  Aikataulutuksen aloittaminen    100
