@@ -1,0 +1,82 @@
+\documentclass[a4paper, 12pt, finnish]{article}
+\usepackage{babel}
+\usepackage{afterpage}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{eurosym}
+\usepackage[section]{placeins}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{lipsum}
+\usepackage{changepage}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[backend=bibtex]{biblatex}
+\def\UrlBreaks{\do\/\do-} %% Line breakit urleissa
+\graphicspath{{./figures/}} % Kuvien lähde
+
+\title{MX Linux 18 käyttöönotto, käyttö ja ohjeistus \\ \large Pohja} %% \large == alaotsikko
+\author{Iiro Aarnio \\ Tampereen seudun ammattiopisto \\}
+
+\begin{document}
+
+%% Kansisivu
+%% Lisää pvm mm.
+\maketitle
+\thispagestyle{empty} % Ei näytä sivunumeroa tällä sivulla
+
+\newpage
+\thispagestyle{empty}
+\begin{table}[htpb]
+	\begin{tabular}{llll}
+		Versiohistoria &            &                         &             \\
+		\rowcolor[HTML]{FFCCC9}
+		Versio         & Päivämäärä & Muutosperuste           & Tekijä      \\
+		0.1              & 16.4.2019   & Ensimmäinen vedos       & Iiro Aarnio \\
+	\end{tabular}
+\end{table}
+
+\begin{table}[htpb]
+	\begin{tabular}{lll}
+		Jakelu &            &                                  \\
+		\rowcolor[HTML]{FFCCC9}
+		Tekijä         & Tulostettu & Jakelu                 \\
+		Iiro Aarnio              & 16.4.2019   & Ei jakelua \\
+	\end{tabular}
+\end{table}
+
+\newpage
+\thispagestyle{empty} % Ei näytä sivunumeroa tällä sivul6la
+
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic} %% resettaa sivunro lask
+
+\setcounter{page}{1} % Sisällysluettelo aloittaa laskennan tältä sivulta
+\newpage
+\section{<++>}
+
+\subsection{<++>}
+
+Normaali tapahtumien kulku
+
+\begin{adjustwidth}{0.4\textwidth}{}
+        <++>
+\end{adjustwidth}
+Vaihtoehtoinen tapahtumien kulku
+
+\begin{adjustwidth}{0.4\textwidth}{}
+        <++>
+\end{adjustwidth}
+
+\end{document}
