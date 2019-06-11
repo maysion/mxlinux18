@@ -6,3 +6,4 @@ Pvm     Teht                            Min
 6.6.19  Palaverimuistion laatiminen x2  50
 6.6.19  Aikataulutuksen aloittaminen    100
 7.6.19  Aikataulun viimeistely          100
+11.6.19 Sis.luettelosuunnitelman teko   130
