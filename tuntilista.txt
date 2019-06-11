@@ -1,9 +1,9 @@
 Pvm     Teht                            Min
 3.6.19	Projektiesityksen laatiminen    60
-3.6.19	Projektiesityksen tarkistutt.   15
 3.6.19  Pro.suunnitelman laatimista    100
 4.6.19  Pro.suunnitelman viimeistely    90
 6.6.19  Palaverimuistion laatiminen x2  50
 6.6.19  Aikataulutuksen aloittaminen    100
 7.6.19  Aikataulun viimeistely          100
-11.6.19 Sis.luettelosuunnitelman teko   130
+7.6.19  Sis.luettelosuunnitelman teko   90
+11.6.19 Sis.luettelosuunnitelman teko   40
