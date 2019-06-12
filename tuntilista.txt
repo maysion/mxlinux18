@@ -8,5 +8,6 @@ Pvm     Teht                            Min
 7.6.19  Sis.luettelosuunnitelman teko   90
 11.6.19 Sis.luettelosuunnitelman teko   40
 12.6.19 Oppaan aloitus, kansi+tiivist.  50
-12.6.19	Kansisivun viimeistely		    20
+12.6.19	Kansisivun viimeistely		20
 12.6.19	MX Linux esittely aloitus       40	
+12.6.19	Testiasennus, jakeluun tutust.  60	
