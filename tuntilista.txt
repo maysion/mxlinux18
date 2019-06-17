@@ -1,6 +1,6 @@
 Pvm     Teht                            Min
 3.6.19	Projektiesityksen laatiminen    60
-3.6.19  Pro.suunnitelman laatimista    100
+3.6.19  Pro.suunnitelman laatimista     100
 4.6.19  Pro.suunnitelman viimeistely    90
 6.6.19  Palaverimuistion laatiminen x2  50
 6.6.19  Aikataulutuksen aloittaminen    100
@@ -9,5 +9,6 @@ Pvm     Teht                            Min
 11.6.19 Sis.luettelosuunnitelman teko   40
 12.6.19 Oppaan aloitus, kansi+tiivist.  50
 12.6.19	Kansisivun viimeistely		20
-12.6.19	MX Linux esittely aloitus       40	
-12.6.19	Testiasennus, jakeluun tutust.  60	
+12.6.19	MX Linux esittely aloitus       40
+12.6.19	Testiasennus, jakeluun tutust.  60
+17.6.19 Jakelun tutkimista ja asennus   30
