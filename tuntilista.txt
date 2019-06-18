@@ -12,3 +12,4 @@ Pvm     Teht                            Min
 12.6.19	MX Linux esittely aloitus       40
 12.6.19	Testiasennus, jakeluun tutust.  60
 17.6.19 Jakelun tutkimista ja asennus   30
+17.6.19 Asennusvaiheen kuvankaappaukset 50
