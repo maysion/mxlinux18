@@ -24,6 +24,15 @@
 \definecolor{grey}{rgb}{0.9,0.9,0.9}
 \def\UrlBreaks{\do\/\do-}
 \graphicspath{{./figures/}}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 \begin{document}
 \begin{titlepage}
 	\colorbox{grey}{
@@ -74,8 +83,7 @@ MX Linux 18 eroaa monin eri tavoin muista markkinoilla olevista käyttöjärjest
 
 Työpöytäkäytössä GNU/Linux-järjestelmien edut ovat huomattavat. Suuri osa GNU/Linux-jakeluista ovat todella kevyitä ja toimivat hyvin vanhemmalla laitteistolla. Markkinoiden suosituimmat käyttöjärjestelmät, Microsoft Windows sekä MacOS, ovat todella raskaita käyttöjärjestelmiä ja vaativat suhteellisen uutta laitteistoa. MX Linux 18 on kevyt ja suunniteltu toimivaksi mahdollisimman monilla erilaisilla laitteistolla.
 
-\section{Asennus}
-\subsection{Asennusmedian käynnistäminen}
+\section{Livetilaan käynnistäminen}
 MX Linux 18 -jakelun käynnistyttyä käynnistysmedialta, avautuu kuvanmukainen valikko. (Kuva \ref{fig:boot})
 Painamalla F2-näppäintä, voidaan valita haluttu kieli. Valintaa voi muokata nuolinäppäimillä. (Kuva \ref{fig:lang}) Kieliasetus on hyvä määrittää tässä vaiheessa, sillä se määrittää koko asennusprosessin kielen.
 
@@ -98,7 +106,7 @@ Painamalla F2-näppäintä, voidaan valita haluttu kieli. Valintaa voi muokata n
 
 Kielen valitsemisen jälkeen jakelun voi käynnistää niin kutsuttuun livetilaan, painamalla Enter-painiketta.
 
-\subsection{Livetila}
+\subsection{Tietoa livetilasta}
 
 Toisin kuin yleisimmät kaupalliset käyttöjärjestelmät, GNU/Linux-jakelut käynnistyvät usein nk. livetilaan, josta jakelu asennetaan.
 Livetilassa voi tarkastella järjestelmän ja kovalevyjen tietoja. Mikään tallennettu tiedosto ei kuitenkaan säily käynnistysten välissä. Livetilaa voi hyödyntää esimerkiksi yksityisyyden korostamiseen, tietokoneen korjaamiseen tai jakeluun tutustumiseen ilman varsinaista asennusta. Jakelun käynnistyttyä livetilaan ruudulle ilmestyy Tervetulo-ohjelma.
@@ -112,9 +120,9 @@ Tervetulo-ohjelmasta löytyy paljon hyödyllistä tietoa jakelusta ja sen käyt�
     \end{center}
 \end{figure}
 
-\subsection{Asennuksen aloittaminen}
+\section{Asennuksen aloittaminen}
 
-Aloittaaksesi asennuksen, sulje kaikki muut sovellukset ikkunoiden oikeasta yläkulmasta. Paikanna asennusohjelma työpöydältä ja avaa se tuplaklikkaamalla sitä kursorilla. (Kuva \ref{fig:asenna}) Tämän jälkeen asennusohjelma käynnistyy ja asennus voidaan aloittaa tarpeellisten määritysten jälkeen.
+Aloittaaksesi asennuksen, sulje kaikki muut sovellukset ikkunoiden oikeasta yläkulmasta. Paikanna asennusohjelma työpöydältä ja avaa se tuplaklikkaamalla sitä kursorilla. (Kuva \ref{fig:asenna})
 
 \begin{figure}[htpb]
     \begin{center}
@@ -126,15 +134,68 @@ Aloittaaksesi asennuksen, sulje kaikki muut sovellukset ikkunoiden oikeasta ylä
 
 \subsection{Asennusohjelma}
 
-Asennusohjelma käynnistyy perinteisenä ikkunana. Tässä ikkunassa tehdään kaikki tarvittavat määritykset ja lopuksi asennetaan jakelu kovalevylle.
+Asennusohjelma käynnistyy perinteisenä ikkunana. Tässä ikkunassa tehdään kaikki tarvittavat määritykset ja lopuksi jakelu asennetaan jakelu kovalevylle.
 
-Ensimmäisessä vaiheessa on lyhyt esittelyteksti sekä näppäimistöasetusten valinta. Mikäli näppäimistön asettelun kohdalla ei lue \textbf{fi}, muuta asettelua painamalla \textit{Muuta näppäimistön asetuksia}. Kun näppäimistön asettelu on vaihdettu sopivaksi, asennusta voi jatkaa painamalla Seuraava-nappia. (Kuva \ref{fig:as1})
+Ensimmäisessä vaiheessa on lyhyt esittelyteksti sekä näppäimistöasetusten valinta. Mikäli näppäimistön asettelun kohdalla ei lue \textbf{fi}, muuta asettelua painamalla \textit{Muuta näppäimistön asetuksia}. Kun näppäimistön asettelu on vaihdettu sopivaksi, asennusta voi jatkaa painamalla Seuraava-painiketta. (Kuva \ref{fig:as1})
 
 \begin{figure}[htpb]
     \begin{center}
         \includegraphics[width=0.875\textwidth]{asen/asennusohjelma1}
         \caption{Asennusohjelman ensimmäinen vaihe}
         \label{fig:as1}
+    \end{center}
+\end{figure}
+\clearpage
+
+\subsection{Osiointi}
+Asennusohjelman seuraavassa vaiheessa kovalevy osioidaan. Uusille käyttäjille suositellaan valitsemaan automaattinen osointi valitsemalla kuvassa näkyvän vaihtoehdon \textit{Asenna automaattisesti käyttäen koko levyä}. Tällöin asennusohjelma osioi valitun kovalevyn automaattisesti ja käyttäjän ei tarvitse huolehtia asiasta.
+Mikäli olet ennen osioinut GNU/Linux-järjestelmiä ja haluat tehdä sen manuaalisesti, valitse vaihtoehto \textit{Mukautettu asennus olemassaoleville osioille} ja siirry oppaan kohtaan \ref{sec:manual}. (Kuvat \ref{fig:osiointi} ja \ref{fig:auto})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{asen/osiointi}
+        \caption{Asennusohjelman osiointivaihe}
+        \label{fig:osiointi}
+    \end{center}
+\end{figure}
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.65\textwidth]{asen/osiointi_auto}
+        \caption{Osiointitavan valitseminen asennusohjelmassa}
+        \label{fig:auto}
+    \end{center}
+\end{figure}
+
+
+\subsubsection{Manuaalinen osiointi}
+\label{sec:manual}
+Manuaalista osiointia varten avaa haluamasi osiointityökalu tai suorita \textit{gparted}-työkalu painamalla \textit{Suorita osiotyökalu} -painiketta. Työkalun avauduttua, valitse yläreunasta oikea kovalevy ja poista mahdolliset aikaisemmat osiot painamalla osiota hiiren oikealla painikkeella, ja valitsemalla \textit{poista}. Kuvassa näkyy kovalevy, josta on poistettu jokainen osio, ja on täten valmis osioitavaksi MX Linux 18 -asennusta varten. (Kuva \ref{fig:varaamaton})
+\clearpage
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{asen/osiointi_gparted}
+        \caption{Gparted-työkalu}
+        \label{fig:varaamaton}
+    \end{center}
+\end{figure}
+Aloita osiointi luomalla swap-osio. MX Linux 18 suosittelee swap-osion kooksi hieman laitteiston keskusmuistia isompaa määrää. Luo osio painamalla varaamatonta aluetta hiiren oikealla painikkeella ja valitsemalla <++> // tarkista painikkeen oikea nimi ja lisää kuva // \textit{uusi osio}.
+
+Valitse osion tiedostojärjestelmäksi \textit{linux-swap}. (Kuva \ref{fig:swap})
+Aseta myös osion koko. Tässä oppaassa jakelu asennetaan laitteistolla, jossa on 2 gigatavua keskusmuistia, joten swap-osion koko on noin kaksinkertainen. (Kuva \ref{fig:swapsize})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{asen/osiointi_gparted_swap}
+        \caption{Swap-osion tiedostojärjestelmä}
+        \label{fig:swap}
+    \end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{asen/osiointi_gparted_swapsize}
+        \caption{Swap-osion koko}
+        \label{fig:swapsize}
     \end{center}
 \end{figure}
 \end{document}
