@@ -20,3 +20,5 @@ Pvm     Teht                            Min
 20.6.19         SAIRAANA                x
 21.6.19 tekstin korjailua, kuvien aset. 30
 21.6.19 Osiointi tekstiä auto ja man.   120
+21.6.19 Kuvien asettelu ja editointi    60
+21.6.19 Asettelukorjauksia              40
