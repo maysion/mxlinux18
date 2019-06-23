@@ -178,24 +178,27 @@ Manuaalista osiointia varten avaa haluamasi osiointityökalu tai suorita \textit
         \label{fig:varaamaton}
     \end{center}
 \end{figure}
-Aloita osiointi luomalla swap-osio. MX Linux 18 suosittelee swap-osion kooksi hieman laitteiston keskusmuistia isompaa määrää. Luo osio painamalla varaamatonta aluetta hiiren oikealla painikkeella ja valitsemalla <++> // tarkista painikkeen oikea nimi ja lisää kuva // \textit{uusi osio}.
-
-Valitse osion tiedostojärjestelmäksi \textit{linux-swap}. (Kuva \ref{fig:swap})
-Aseta myös osion koko. Tässä oppaassa jakelu asennetaan laitteistolla, jossa on 2 gigatavua keskusmuistia, joten swap-osion koko on noin kaksinkertainen. (Kuva \ref{fig:swapsize})
-
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{asen/osiointi_gparted_uusi}
+  \end{center}
+  \vspace*{-3mm}
+  \caption{Uuden osion luominen Gparted\\-työkalun valikosta}
+  \label{fig:uusi}
+\end{wrapfigure}
+Aloita osiointi luomalla swap-osio. Swap tarkoitaa keskusmuistissa olevan tiedon siirtämistä massamuistille, keskusmuistitilan loppuessa. 
+Swap-osio tehdään mahdollisesti siirrettävää dataa varten. MX Linux 18 suosittelee swap-osion kooksi hieman laitteiston keskusmuistia isompaa määrää. Luo osio painamalla varaamatonta aluetta hiiren oikealla painikkeella ja valitsemalla \textit{uusi}. (Kuva \ref{fig:uusi})
+Valitse osion tiedostojärjestelmäksi \textit{linux-swap}.
+Aseta myös osion koko. Koko syötetään kohtaan \textit{Uusi koko (MiB)}. Jos laitteessasi on esimerkiksi 8 gigatavua keskusmuistia, anna osion kooksi 8000 MiB. Tässä oppaassa jakelu asennetaan laitteistolla, jossa on kaksi gigatavua keskusmuistia, joten swap-osion koko on 2000 mebitavua eli noin 2,1 gigatavua. (Kuva \ref{fig:swap})
+\clearpage
 \begin{figure}[htpb]
     \begin{center}
-        \includegraphics[width=0.7\textwidth]{asen/osiointi_gparted_swap}
+        \includegraphics[width=0.9\textwidth]{asen/osiointi_gparted_swap}
         \caption{Swap-osion tiedostojärjestelmä}
         \label{fig:swap}
     \end{center}
 \end{figure}
 
-\begin{figure}[htpb]
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{asen/osiointi_gparted_swapsize}
-        \caption{Swap-osion koko}
-        \label{fig:swapsize}
-    \end{center}
-\end{figure}
+sadasdasdasasddasasddasas
 \end{document}
+
