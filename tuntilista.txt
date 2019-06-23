@@ -22,3 +22,4 @@ Pvm     Teht                            Min
 21.6.19 Osiointi tekstiä auto ja man.   120
 21.6.19 Kuvien asettelu ja editointi    60
 21.6.19 Asettelukorjauksia              40
+23.6.19 Root osiost akirjoittaminen     70
