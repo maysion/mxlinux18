@@ -11,8 +11,8 @@ Pvm     Teht                            Min
 12.6.19	Kansisivun viimeistely		20
 12.6.19	MX Linux esittely aloitus       40
 12.6.19	Testiasennus, jakeluun tutust.  60
-17.6.19 Jakelun tutkimista ja asennus   30
-17.6.19 Asennusvaiheen kuvankaappaukset 50
+17.6.19 Jakelun tutkimista ja asennus   50
+18.6.19 Asennusvaiheen kuvankaappaukset 30
 18.6.19 Asennukse. kirjoit. 2.1 ja 2.2  50
 18.6.19 Jakelun opiskelua itsenäisesti  90
 18.6.19 Asennukse. kirjoit. 2.3 ja 2.4  70
