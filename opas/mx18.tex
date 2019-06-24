@@ -120,7 +120,7 @@ Tervetulo-ohjelmasta löytyy paljon hyödyllistä tietoa jakelusta ja sen käyt�
     \end{center}
 \end{figure}
 
-\section{Asennuksen aloittaminen}
+\section{MX Linux 18 asentaminen}
 
 Aloittaaksesi asennuksen, sulje kaikki muut sovellukset ikkunoiden oikeasta yläkulmasta. Paikanna asennusohjelma työpöydältä ja avaa se tuplaklikkaamalla sitä kursorilla. (Kuva \ref{fig:asenna})
 
@@ -186,7 +186,7 @@ Manuaalista osiointia varten avaa haluamasi osiointityökalu tai suorita \textit
   \caption{Uuden osion luominen Gparted\\-työkalun valikosta}
   \label{fig:uusi}
 \end{wrapfigure}
-Aloita osiointi luomalla swap-osio. Swap tarkoitaa keskusmuistissa olevan tiedon siirtämistä massamuistille, keskusmuistitilan loppuessa. 
+Aloita osiointi luomalla swap-osio. Swap tarkoitaa keskusmuistissa olevan tiedon siirtämistä massamuistille, keskusmuistitilan loppuessa.
 Swap-osio tehdään mahdollisesti siirrettävää dataa varten. MX Linux 18 suosittelee swap-osion kooksi hieman laitteiston keskusmuistia isompaa määrää. Luo osio painamalla varaamatonta aluetta hiiren oikealla painikkeella ja valitsemalla \textit{uusi}. (Kuva \ref{fig:uusi})
 Valitse osion tiedostojärjestelmäksi \textit{linux-swap}.
 Aseta myös osion koko. Koko syötetään kohtaan \textit{Uusi koko (MiB)}. Jos laitteessasi on esimerkiksi 8 gigatavua keskusmuistia, anna osion kooksi 8000 MiB. Tässä oppaassa jakelu asennetaan laitteistolla, jossa on kaksi gigatavua keskusmuistia, joten swap-osion koko on 2000 mebitavua eli noin 2,1 gigatavua. (Kuva \ref{fig:swap})
@@ -194,7 +194,7 @@ Aseta myös osion koko. Koko syötetään kohtaan \textit{Uusi koko (MiB)}. Jos 
 \begin{figure}[htpb]
     \begin{center}
         \includegraphics[width=0.7\textwidth]{asen/osiointi_gparted_swap}
-        \caption{Swap-osion tiedostojärjestelmä}
+        \caption{Swap-osion tiedostojärjestelmä ja koko}
         \label{fig:swap}
     \end{center}
 \end{figure}
@@ -206,11 +206,46 @@ Luo seuraavaksi juuri-osio. Juuri- eli root-osioon asennetaan varsinainen käytt
 \begin{figure}[htpb]
     \begin{center}
         \includegraphics[width=0.7\textwidth]{asen/osiointi_gparted_root}
-        \caption{Swap-osion tiedostojärjestelmä}
+        \caption{Juuri-osion tiedostojärjestelmä ja koko}
         \label{fig:root}
     \end{center}
 \end{figure}
-\section{<++>}
+
+Seuraavaksi liitetään juuri luodut osiot oikein. Sulje Gparted-työkalu ja paina asennusohjelmasta Seuraava-painiketta.
+Valitse juurerksi luomasi suurempi osio ja varmista, että tyyppi on ext4. Valitse sen jälkeen heittovaihdoksi luomasi swap-osio.
+Manuaalinen osiointi on nyt valmis. Jatka asennusta painamalla Seuraava-painiketta. (Kuva \ref{fig:valmis})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{asen/osiointi_valmis}
+        \caption{Osioiden liittäminen asennusohjelmassa}
+        \label{fig:valmis}
+    \end{center}
+\end{figure}
+
+\subsection{GRUB-lataimen asennus}
+
+Seuraavassa vaiheessa asennusohjelma asentaa GRUB-käynnistyslataimen, jota käyttöjärjestelmä käyttää käyttöjärjestelmän käynnistykseen eli lataamiseen. Valitse järjestelmän käynnistyslevyksi sama levy, jolle asennat käyttöjärjestelmän. Mikäli laitteellasi on asennettuna myös Windows-käyttöjärjestelmä, valitse \textit{Asenna GRUB Linuxille ja Windowsille}. Valitse sijainniksi MBR. (Kuva \ref{fig:grub})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{asen/asennus_grub}
+        \caption{GRUB-lataimen asennusvalikko}
+        \label{fig:grub}
+    \end{center}
+\end{figure}
+
+\subsection{Yksilöintiasetukset}
+
+Asennusohjelmassa määritetään laitteelle nimi, verkkonimi ja työryhmä. Nimeä käytetetään yksilöimään tietokone paikallisesti sekä verkossa. Työryhmää käytetään työskentelyyn vertaisverkossa. Mikäli et tiedä mitä sinun tulisi syöttää näihin, jätä ne muuttamatta. (Kuva \ref{fig:hosts})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{asen/asennus_hosts}
+        \caption{Tietokoneen eri yksilöintiasetusten määritys asennusohjelmassa}
+        \label{fig:hosts}
+    \end{center}
+\end{figure}
 
 \end{document}
 
