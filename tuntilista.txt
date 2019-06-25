@@ -24,3 +24,5 @@ Pvm     Teht                            Min
 21.6.19 Asettelukorjauksia              40
 23.6.19 Root osiost akirjoittaminen     70
 24.6.19 Yksilöinti ja osiointi tekstiä  60
+24.6.19 Asennus kirjoitettu loppuun     50
+24.6.19 Peruskäytöstä kirjoittaminen    40

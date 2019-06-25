@@ -120,7 +120,7 @@ Tervetulo-ohjelmasta löytyy paljon hyödyllistä tietoa jakelusta ja sen käyt�
     \end{center}
 \end{figure}
 
-\section{MX Linux 18 asentaminen}
+\section{MX Linux 18 -jakelun asentaminen}
 
 Aloittaaksesi asennuksen, sulje kaikki muut sovellukset ikkunoiden oikeasta yläkulmasta. Paikanna asennusohjelma työpöydältä ja avaa se tuplaklikkaamalla sitä kursorilla. (Kuva \ref{fig:asenna})
 
@@ -211,7 +211,7 @@ Luo seuraavaksi juuri-osio. Juuri- eli root-osioon asennetaan varsinainen käytt
     \end{center}
 \end{figure}
 
-Seuraavaksi liitetään juuri luodut osiot oikein. Sulje Gparted-työkalu ja paina asennusohjelmasta Seuraava-painiketta.
+Seuraavaksi tulee liittää luodut osiot oikein. Sulje Gparted-työkalu ja paina asennusohjelmasta Seuraava-painiketta.
 Valitse juurerksi luomasi suurempi osio ja varmista, että tyyppi on ext4. Valitse sen jälkeen heittovaihdoksi luomasi swap-osio.
 Manuaalinen osiointi on nyt valmis. Jatka asennusta painamalla Seuraava-painiketta. (Kuva \ref{fig:valmis})
 
@@ -234,7 +234,7 @@ Seuraavassa vaiheessa asennusohjelma asentaa GRUB-käynnistyslataimen, jota käy
         \label{fig:grub}
     \end{center}
 \end{figure}
-
+\clearpage
 \subsection{Yksilöintiasetukset}
 
 Asennusohjelmassa määritetään laitteelle nimi, verkkonimi ja työryhmä. Nimeä käytetetään yksilöimään tietokone paikallisesti sekä verkossa. Työryhmää käytetään työskentelyyn vertaisverkossa. Mikäli et tiedä mitä sinun tulisi syöttää näihin, jätä ne muuttamatta. (Kuva \ref{fig:hosts})
@@ -246,6 +246,55 @@ Asennusohjelmassa määritetään laitteelle nimi, verkkonimi ja työryhmä. Nim
         \label{fig:hosts}
     \end{center}
 \end{figure}
+\clearpage
+\subsection{Sijainti- ja kelloasetukset}
+
+Asennusohjelma kysyy käyttäjän sijaintia ja aikavyöhykettä. Syötä haluamasi sijainti ja aikavyöhyke. Voit myös valita, haluatko käyttää 12 vai 24 tunnin kelloa. Kuvassa näkyy esimerkkiasetukset. (Kuva \ref{fig:locale})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{asen/asennus_locale}
+        \caption{Esimerkkiasetukset sijaintiasetuksiin asennusohjelmassa}
+        \label{fig:locale}
+    \end{center}
+\end{figure}
+
+\subsection{Käyttäjätilin luonti}
+
+Viimeiseksi asennusohjelmassa luodaan käyttäjätili ja annetaan pääkäyttäjälle salasana. Luo oma käyttäjätilisi haluamallasi käyttäjänimellä ja salasanalla.
+Pääkäyttäjän salasanan tulisi olla turvallinen ja vain laitteen hallitsijan tiedossa.
+Pääkäyttäjäsalasanaa tarvitaan muun muassa silloin, kun halutaan asentaa tai päivittää ohjelmia, päivittää käyttöjärjestelmä tai sen osia tai poistaa suojattuja ohjelmia ja tiedostoja. (Kuva \ref{fig:user})
+\\
+
+Asennus on nyt valmis. Käynnistä laitteesi uudelleen valitsemalla automaattinen uudelleenkäynnistys ja painamalla asennusohjelman \textit{Lopeta}-painiketta. (Kuva \ref{fig:valmis2})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.899\textwidth]{asen/asennus_user}
+        \caption{Käyttäjätilin luonti asennusohjelmassa}
+        \label{fig:user}
+    \end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.899\textwidth]{asen/asennus_valmis}
+        \caption{Asennusohjelma valmistuneena}
+        \label{fig:valmis2}
+    \end{center}
+\end{figure}
+
+\section{Peruskäyttö}
+
+\subsection{Työpöytäympäristö}
+MX Linuxin työpöytää hallitaan vasemmalla sijaitsevasta palkista, josta löytyy muun muassa sovellusvalikko, uloskirjautumis- ja sammutus-painike, avoimet ikkunat ja pikakuvakkeita sovelluksiin.
+(Kuva \ref{})
+
+\subsection{Internet}
+
+Mikäli käytät langallista verkkoyhteyttä, MX Linuxin tulisi yhdistää verkkoon automaattisesti. Jos näin ei tapahdu avaa verkkoasetukset (Kuva \ref{}) ja <++>
+
+MX Linuxissa on valmiiksi asennettuna \textit{Mozilla Firefox} -selain. Jos haluat käyttää jotain muuta selainta, sovelluskaupasta löytyy paljon selainvaihtoehtoja, joita voi asentaa ilmaiseksi.
 
 \end{document}
 
