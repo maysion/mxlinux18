@@ -26,3 +26,4 @@ Pvm     Teht                            Min
 24.6.19 Yksilöinti ja osiointi tekstiä  60
 24.6.19 Asennus kirjoitettu loppuun     50
 24.6.19 Peruskäytöstä kirjoittaminen    40
+25.6.19 Peruskäytöstä kirjt. uusia kuv. 120

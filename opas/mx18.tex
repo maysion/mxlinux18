@@ -200,7 +200,6 @@ Aseta myös osion koko. Koko syötetään kohtaan \textit{Uusi koko (MiB)}. Jos 
 \end{figure}
 
 
-
 Luo seuraavaksi juuri-osio. Juuri- eli root-osioon asennetaan varsinainen käyttöjärjestelmä. Osio sisältää kaikki käyttäjän asentamat ohjelmistot ja asetukset. Valitse Gparted-työkalussa varaamaton alue ja paina \textit{Uusi}. Osiolle suositeltu tiedostojärjestelmä on ext4. Osion kooksi suositellaan koko loppu levytilaa. (Kuva \ref{fig:root})
 
 \begin{figure}[htpb]
@@ -288,14 +287,78 @@ Asennus on nyt valmis. Käynnistä laitteesi uudelleen valitsemalla automaattine
 
 \subsection{Työpöytäympäristö}
 MX Linuxin työpöytää hallitaan vasemmalla sijaitsevasta palkista, josta löytyy muun muassa sovellusvalikko, uloskirjautumis- ja sammutus-painike, avoimet ikkunat ja pikakuvakkeita sovelluksiin.
-(Kuva \ref{})
+(Kuva \ref{fig:tyopoytaymparisto})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.98\textwidth]{ymparisto/tyopoyta}
+        \caption{Työpöytäympäristö ja sivupalkin selitykset}
+        \label{fig:tyopoytaymparisto}
+    \end{center}
+\end{figure}
+\clearpage
 
 \subsection{Internet}
 
-Mikäli käytät langallista verkkoyhteyttä, MX Linuxin tulisi yhdistää verkkoon automaattisesti. Jos näin ei tapahdu avaa verkkoasetukset (Kuva \ref{}) ja <++>
+Mikäli käytät langallista verkkoyhteyttä, MX Linuxin tulisi yhdistää verkkoon automaattisesti. Jos näin ei tapahdu avaa verkkoasetukset avaamalla sovellusvalikko (Kuva \ref{fig:valikko}) ja hakemalla \textit{verkkoyhteydet}. (Kuva \ref{fig:verkko})
+\begin{figure}[htbp]
+     \centering
+      \begin{minipage}{.60\textwidth}
+           \centering
+            \includegraphics[width=.98\linewidth]{internet/tyopoyta}
+             \captionof{figure}{Sovellusvalikon painike sivupalkissa}
+              \label{fig:valikko}
+               \end{minipage}%
+               \begin{minipage}{.40\textwidth}
+                    \centering
+                     \includegraphics[width=.98\linewidth]{internet/verkkoyhteydet}
+                      \captionof{figure}{MX Linuxin sovellusvalikossa hakeminen}
+                       \label{fig:verkko}
+                        \end{minipage}
+                         \end{figure}
+
+
+Verkkoyhteys asetukset avautuu. Paina \textit{Lisää}-painiketta, lisätäksesi uuden yhteyden. (Kuva \ref{fig:vasetukset}) Langallista yhteyttä varten valitse yhteyden tyypiksi \textit{Ethernet}. (Kuva \ref{fig:ethernet}) 
+Tallenna yhteys vakioasetuksilla ja laitteesi on yhdistetty verkkoon (Kuva \ref{fig:connection})
+
+\begin{figure}[htbp]
+     \centering
+      \begin{minipage}{.5\textwidth}
+           \centering
+            \includegraphics[width=.98\linewidth]{internet/lisaa_yhteys}
+             \captionof{figure}{Sovellusvalikon painike sivupalkissa}
+              \label{fig:vasetukset}
+               \end{minipage}%
+               \begin{minipage}{.5\textwidth}
+                    \centering
+                     \includegraphics[width=.98\linewidth]{internet/yhteys_ethernet}
+                      \captionof{figure}{MX Linuxin sovellusvalikossa hakeminen}
+                       \label{fig:ethernet}
+                        \end{minipage}
+                         \end{figure}
+                         \clearpage
+
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.899\textwidth]{internet/yhteys_tallenna}
+        \caption{Verkkoyhteyden tallentaminen}
+        \label{fig:connection}
+    \end{center}
+\end{figure}
+
+\subsubsection{Selain}
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{internet/firefox}
+  \end{center}
+  \vspace*{-3mm}
+  \caption{Mozilla Firefox -selain ja sen pikakuvake}
+  \label{fig:firefox}
+\end{wrapfigure}
 
 MX Linuxissa on valmiiksi asennettuna \textit{Mozilla Firefox} -selain. Jos haluat käyttää jotain muuta selainta, sovelluskaupasta löytyy paljon selainvaihtoehtoja, joita voi asentaa ilmaiseksi.
-Löydät valmiiksi asennetun selaimen pikakuvakkeen sivupalkista. (Kuva \ref{})
+Löydät valmiiksi asennetun selaimen pikakuvakkeen sivupalkista. (Kuva \ref{fig:firefox})
 
 \end{document}
 
