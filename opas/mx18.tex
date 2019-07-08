@@ -26,6 +26,35 @@
 \graphicspath{{./figures/}}
 \usepackage{titlesec}
 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
 \setcounter{secnumdepth}{4}
 
 \titleformat{\paragraph}
@@ -359,6 +388,141 @@ Tallenna yhteys vakioasetuksilla ja laitteesi on yhdistetty verkkoon (Kuva \ref{
 
 MX Linuxissa on valmiiksi asennettuna \textit{Mozilla Firefox} -selain. Jos haluat käyttää jotain muuta selainta, sovelluskaupasta löytyy paljon selainvaihtoehtoja, joita voi asentaa ilmaiseksi.
 Löydät valmiiksi asennetun selaimen pikakuvakkeen sivupalkista. (Kuva \ref{fig:firefox})
+
+\subsection{Ohjelmien hallinta}
+Suositeltu tapa asentaa ja hallita ohjelmia MX Linuxilla on joko asentaa ne terminaalista tai käyttää ns. paketinhallintaohjelmaa.
+Paketinhallintaohjelmat toimivat teoriassa samalla tavalla, kuin paketinhallintatyökalun käyttö terminaalissa. MX Linux käyttää apt-paketinhallintajärjestelmää. Järjestelmään on asennettu valmiiksi Synaptic-niminen paketinhallintaohjelma, jossa on graafinen käyttöliittymä. 
+
+\clearpage
+\subsubsection{Synaptic-paketinhallintaohjelma}
+Löydät Synaptic-ohjelman hakemalla sovellusvalikosta hakusanalla \textit{synaptic}.
+(Kuva \ref{fig:synaptichaku})
+Huomioi, että ohjelma vaatii käynnistyäkseen pääkäyttäjän salasanan.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.65\textwidth]{ymparisto/synaptic_haku}
+        \caption{Synaptic-ohjelma sovellusvalikossa}
+        \label{fig:synaptichaku}
+    \end{center}
+\end{figure}
+
+Synaptic-ohjelmassa voit asentaa, päivittää ja poistaa paketteja, eli ns. ohjelmia. Ohjelman avauduttua, näet näkymän, jossa voit etsiä eri paketteja sekä poistaa, asentaa, päivittää ja selata niitä. (Kuva \ref{fig:syn_nak})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{ymparisto/synaptic_nakyma}
+        \caption{Synaptic-ohjelman perusnäkymä}
+        \label{fig:syn_nak}
+    \end{center}
+\end{figure}
+
+Esimerkiksi Chromium-selaimen asentaminen tapahtuisi hakemalla \textit{Etsi}-painikkeella "\textit{chromium}". (Kuva \ref{fig:chro_haku}) 
+Tämän jälkeen paikannetaan oikea paketti hakutuloksista. Tässä tapauksessa oikea paketti on nimeltään \textit{chromium}. Vie kursori paketin nimen päälle ja avaa lisävalikko painamallla hiiren oikeaa painiketta, ja valitse \textit{Merkitse asennettavaksi}. (Kuva \ref{fig:chro_menu})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{ymparisto/chro_haku}
+        \caption{Paketin hakeminen Synaptic-ohjelmassa}
+        \label{fig:chro_haku}
+    \end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{ymparisto/chro_menu}
+        \caption{Paketin lisävalikko}
+        \label{fig:chro_menu}
+    \end{center}
+\end{figure}
+\clearpage
+
+Paina tämän jälkeen \textit{Toteuta}-painiketta ylävalikosta. (Kuva \ref{fig:toteuta}) Huomoi, että voit merkitä niin monta pakettia asennettavaksi, kuin haluat. Säästät näin aikaa, asentaessasi isompia määriä paketteja kerralla.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.756\textwidth]{ymparisto/syn_toteuta}
+        \caption{Asennuksen toteutuspainike Synaptic-ohjelman ylävalikossa}
+        \label{fig:toteuta}
+    \end{center}
+\end{figure}
+
+Ohjelma kysyy käyttäjän varmistusta. Viimeistelläksesi asentamisen, paina \textit{Apply}-painiketta alakulmasta. (Kuva \ref{fig:toteuta2}) Chromium-selain löytyy nyt sovellusvalikostasi.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.756\textwidth]{ymparisto/syn_toteuta2}
+        \caption{Asennuksen varmistaminen}
+        \label{fig:toteuta2}
+    \end{center}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Apt-paketinhallinta terminaalista}
+Ohjelmien ja työkalujen käyttäminen terminaalista on tehokasta, mutta yleensä suositeltavaa vain kokeneemmille käyttäjille.
+
+MX Linuxissa on valmiina asetettu pikanäppäin terminaalin avaamiselle. Voit avata terminaliin painamalla F4-näppäintä. Terminaali aukeaa työpöydän yläpuolelta. (Kuva \ref{fig:terminal})
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.866\textwidth]{ymparisto/terminal}
+        \caption{Terminaali avattuna}
+        \label{fig:terminal}
+    \end{center}
+\end{figure}
+
+Ohjelman asentaminen tapahtuu seuraavalla komennolla:
+\begin{lstlisting}
+sudo apt-get install paketinnimi
+\end{lstlisting}
+
+Tämä on tehokkain tapa asentaa paketteja, mikäli tiedät niiden nimen jo valmiiksi. Komennon voi jakaa osiin. \textbf{sudo} on komento jolla saadaan toteutettua seuraava komento pääkäyttäjän oikeuksilla. \textbf{Apt-get} on Apt-paketinhallintatyökalun komento, ja sen jälkeen kerrotaan sille, mitä halutaan tehdä. Tässä tapauksessa apt-get-komennon jälkeen kirjoitetaan \textbf{install}, sillä tarkoituksena on asentaa paketti. Muita vaihtoehtoja on mm. \textit{remove}, \textit{purge} ja \textit{update}. Viimeiksesi annetaan paketin nimi. 
+
+Esimerkki chromium-paketin asentamisesta terminaalissa:
+\begin{lstlisting}
+    sudo apt-get install chromium
+\end{lstlisting}
+
+\subsection{Järjestelmän päivittäminen}
+MX Linuxiin on rakennettu sisään päivitysohjelma, joka ilmoittaa saatavilla olevista päivityksistä ja tarjoaa näiden päivitysten asentamista. Päivitysohjelma on hyvin intiutiivinen ja siihen löytyy erillinen käyttöopas jakelun kotisivuilta. On hyvä kuitenkin itse ymmärtää, kuinka päivittää järjestelmä terminaalista. Kuten pakettien hallitsemiseenkin, siihen käytetään Apt-työkalua. Voit päivittää tietokoneesi esimerkiksi näin:
+\begin{lstlisting}
+    sudo apt-get update && sudo apt-get upgrade
+\end{lstlisting}
+Tämä hakee viimeisimmän version jokaisesta asennetusta paketista, työkalusta ja järjestelmän osasta ja sen jälkeen suorittaa \textit{upgrade}-komennon, joka päivittää paketit, joille on tarjolla päivitys. Komento vaatii toimivan Internet-yhteyden sekä pääkäyttäjän oikeudet.
+
+\section{Ylläpito}
+\subsection{Käyttäjien hallinta}
+Mikäli laitetta käyttää useampi ihminen, useamman käyttäjän sisällyttäminen on suositeltua. Jos laitteellasi on tällä hetkellä vain asennusvaiheessa luotu käyttäjätili, voit luoda uuden avaamalla MX Käyttäjänhallinta -ohjelman. (Kuva \ref{fig:hallinta})
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{user/set}
+        \caption{MX Käyttäjänhallinta -ohjelma sovellusvalikossa}
+        \label{fig:hallinta}
+    \end{center}
+\end{figure}
+
+Ohjelman avauduttua voit heti luoda uuden käyttäjän syöttämällä tiedot kolmeen ensimmäiseen tekstikenttään, jotka ovat rajattuna kuvassa punaisella. Keltaisella rajatusta kohdasta, voit poistaa olemassaolevia käyttäjiä. (Kuva \ref{fig:usernak})
+ 
+Mikäli haluat antaa jollekkin käyttäjälle oikeuden käyttää \textit{sudo}-komentoa, eli mahdollisuuden käyttää pääkäyttäjän oikeuksia, siirry välilehteen \textit{Ryhmän jäsenyys}. Valitse sen jälkeen muokattava käyttäjä ja valitse ruksittamalla kohta \textbf{sudo}. (Kuva \ref{fig:group})
+
+Kaikkien tekemiesi muutosten jälkeen paina alareunasta \textit{Hyväksy}-painiketta, tallentaaksesi muutokset.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{user/nakyma}
+        \caption{MX Käyttäjänhallinta -ohjelman perusnäkymä}
+        \label{fig:usernak}
+    \end{center}
+\end{figure}   
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{user/group}
+        \caption{Ryhmän jäsenyys -välilehti}
+        \label{fig:group}
+    \end{center}
+\end{figure}   
+
 
 \end{document}
 
