@@ -39,3 +39,5 @@ Pvm     Teht                            Min
 8.7.19  Päivitys, korjauksia            60
 8.7.19  Kuvien muokkausten korjauksia   30
 8.7.19  Ylläpito                        120
+8.7.19  Työohjelmat                     50
+

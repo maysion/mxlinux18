@@ -347,7 +347,7 @@ Mikäli käytät langallista verkkoyhteyttä, MX Linuxin tulisi yhdistää verkk
                          \end{figure}
 
 
-Verkkoyhteys asetukset avautuu. Paina \textit{Lisää}-painiketta, lisätäksesi uuden yhteyden. (Kuva \ref{fig:vasetukset}) Langallista yhteyttä varten valitse yhteyden tyypiksi \textit{Ethernet}. (Kuva \ref{fig:ethernet}) 
+Verkkoyhteys asetukset avautuu. Paina \textit{Lisää}-painiketta, lisätäksesi uuden yhteyden. (Kuva \ref{fig:vasetukset}) Langallista yhteyttä varten valitse yhteyden tyypiksi \textit{Ethernet}. (Kuva \ref{fig:ethernet})
 Tallenna yhteys vakioasetuksilla ja laitteesi on yhdistetty verkkoon (Kuva \ref{fig:connection})
 
 \begin{figure}[htbp]
@@ -370,7 +370,7 @@ Tallenna yhteys vakioasetuksilla ja laitteesi on yhdistetty verkkoon (Kuva \ref{
 
 \begin{figure}[htpb]
     \begin{center}
-        \includegraphics[width=0.899\textwidth]{internet/yhteys_tallenna}
+        \includegraphics[width=0.8\textwidth]{internet/yhteys_tallenna}
         \caption{Verkkoyhteyden tallentaminen}
         \label{fig:connection}
     \end{center}
@@ -390,8 +390,9 @@ MX Linuxissa on valmiiksi asennettuna \textit{Mozilla Firefox} -selain. Jos halu
 Löydät valmiiksi asennetun selaimen pikakuvakkeen sivupalkista. (Kuva \ref{fig:firefox})
 
 \subsection{Ohjelmien hallinta}
+Sillä MX Linux pohjautuu suosituimpaan GNU/Linux-jakeluun, sille on tarjolla valtavasti ohjelmia. Ohjelmia voi hakea Internetistä tai MX Linuxin paketinhallintaohjelmasta.
 Suositeltu tapa asentaa ja hallita ohjelmia MX Linuxilla on joko asentaa ne terminaalista tai käyttää ns. paketinhallintaohjelmaa.
-Paketinhallintaohjelmat toimivat teoriassa samalla tavalla, kuin paketinhallintatyökalun käyttö terminaalissa. MX Linux käyttää apt-paketinhallintajärjestelmää. Järjestelmään on asennettu valmiiksi Synaptic-niminen paketinhallintaohjelma, jossa on graafinen käyttöliittymä. 
+Paketinhallintaohjelmat toimivat teoriassa samalla tavalla, kuin paketinhallintatyökalun käyttö terminaalissa. MX Linux käyttää apt-paketinhallintajärjestelmää. Järjestelmään on asennettu valmiiksi Synaptic-niminen paketinhallintaohjelma, jossa on graafinen käyttöliittymä.
 
 \clearpage
 \subsubsection{Synaptic-paketinhallintaohjelma}
@@ -417,7 +418,7 @@ Synaptic-ohjelmassa voit asentaa, päivittää ja poistaa paketteja, eli ns. ohj
     \end{center}
 \end{figure}
 
-Esimerkiksi Chromium-selaimen asentaminen tapahtuisi hakemalla \textit{Etsi}-painikkeella "\textit{chromium}". (Kuva \ref{fig:chro_haku}) 
+Esimerkiksi Chromium-selaimen asentaminen tapahtuisi hakemalla \textit{Etsi}-painikkeella "\textit{chromium}". (Kuva \ref{fig:chro_haku})
 Tämän jälkeen paikannetaan oikea paketti hakutuloksista. Tässä tapauksessa oikea paketti on nimeltään \textit{chromium}. Vie kursori paketin nimen päälle ja avaa lisävalikko painamallla hiiren oikeaa painiketta, ja valitse \textit{Merkitse asennettavaksi}. (Kuva \ref{fig:chro_menu})
 
 \begin{figure}[htpb]
@@ -476,7 +477,7 @@ Ohjelman asentaminen tapahtuu seuraavalla komennolla:
 sudo apt-get install paketinnimi
 \end{lstlisting}
 
-Tämä on tehokkain tapa asentaa paketteja, mikäli tiedät niiden nimen jo valmiiksi. Komennon voi jakaa osiin. \textbf{sudo} on komento jolla saadaan toteutettua seuraava komento pääkäyttäjän oikeuksilla. \textbf{Apt-get} on Apt-paketinhallintatyökalun komento, ja sen jälkeen kerrotaan sille, mitä halutaan tehdä. Tässä tapauksessa apt-get-komennon jälkeen kirjoitetaan \textbf{install}, sillä tarkoituksena on asentaa paketti. Muita vaihtoehtoja on mm. \textit{remove}, \textit{purge} ja \textit{update}. Viimeiksesi annetaan paketin nimi. 
+Tämä on tehokkain tapa asentaa paketteja, mikäli tiedät niiden nimen jo valmiiksi. Komennon voi jakaa osiin. \textbf{sudo} on komento jolla saadaan toteutettua seuraava komento pääkäyttäjän oikeuksilla. \textbf{Apt-get} on Apt-paketinhallintatyökalun komento, ja sen jälkeen kerrotaan sille, mitä halutaan tehdä. Tässä tapauksessa apt-get-komennon jälkeen kirjoitetaan \textbf{install}, sillä tarkoituksena on asentaa paketti. Muita vaihtoehtoja on mm. \textit{remove}, \textit{purge} ja \textit{update}. Viimeiksesi annetaan paketin nimi.
 
 Esimerkki chromium-paketin asentamisesta terminaalissa:
 \begin{lstlisting}
@@ -489,6 +490,29 @@ MX Linuxiin on rakennettu sisään päivitysohjelma, joka ilmoittaa saatavilla o
     sudo apt-get update && sudo apt-get upgrade
 \end{lstlisting}
 Tämä hakee viimeisimmän version jokaisesta asennetusta paketista, työkalusta ja järjestelmän osasta ja sen jälkeen suorittaa \textit{upgrade}-komennon, joka päivittää paketit, joille on tarjolla päivitys. Komento vaatii toimivan Internet-yhteyden sekä pääkäyttäjän oikeudet.
+
+\subsection{Työohjelmat}
+
+MX Linuxille ei ole saatavilla suosituimpia kaupallisia työohjelmia. Hyviä vapaan lähdekoodin vaihtoehtoja kuitenkin löytyy runsaasti. Vapaan lähdekoodin työohjelmat eivät useimmiten sovi ammattimaiseen työskentelyyn, ominaisuuksien ja tuen puutteen vuoksi.
+Alla on taulukko, jossa näkyy kaupallinen ohjelma ja sen suosituin ilmainen korvaaja.
+
+\begin{table}[ht]
+\caption{Vaihtoehtoja kaupallisille työohjelmille}
+\label{tab:oss}
+    \begin{center}
+\begin{tabular}{ll}
+\textbf{Kaupallinen ohjelma}              & \textbf{Ilmainen vaihtoehto} \\ \hline
+\multicolumn{1}{l|}{Microsoft Word}       & LibreOffice Writer           \\
+\multicolumn{1}{l|}{Microsoft PowerPoint} & LibreOffice Impress          \\
+\multicolumn{1}{l|}{Microsoft Excel}      & LibreOffice Calc             \\
+\multicolumn{1}{l|}{Adobe Photoshop}      & GIMP
+\end{tabular}
+    \end{center}
+\end{table}
+
+\subsection{Ulkoasun kustomointi}
+
+MX Linuxin kustomointimahdollisuudet ovat verrattain suuret. Voit muuttaa lähes jokaista asiaa työpöytäympäristössäsi. Internet on täynnä ohjeita Linux-järjestelmien kustomointiin. Tässä osiossa käydään läpi yleisimmät ulkoasukustomoinnit.
 
 \section{Ylläpito}
 \subsection{Käyttäjien hallinta}
@@ -503,7 +527,7 @@ Mikäli laitetta käyttää useampi ihminen, useamman käyttäjän sisällyttäm
 \end{figure}
 
 Ohjelman avauduttua voit heti luoda uuden käyttäjän syöttämällä tiedot kolmeen ensimmäiseen tekstikenttään, jotka ovat rajattuna kuvassa punaisella. Keltaisella rajatusta kohdasta, voit poistaa olemassaolevia käyttäjiä. (Kuva \ref{fig:usernak})
- 
+
 Mikäli haluat antaa jollekkin käyttäjälle oikeuden käyttää \textit{sudo}-komentoa, eli mahdollisuuden käyttää pääkäyttäjän oikeuksia, siirry välilehteen \textit{Ryhmän jäsenyys}. Valitse sen jälkeen muokattava käyttäjä ja valitse ruksittamalla kohta \textbf{sudo}. (Kuva \ref{fig:group})
 
 Kaikkien tekemiesi muutosten jälkeen paina alareunasta \textit{Hyväksy}-painiketta, tallentaaksesi muutokset.
@@ -514,14 +538,14 @@ Kaikkien tekemiesi muutosten jälkeen paina alareunasta \textit{Hyväksy}-painik
         \caption{MX Käyttäjänhallinta -ohjelman perusnäkymä}
         \label{fig:usernak}
     \end{center}
-\end{figure}   
+\end{figure}
 \begin{figure}[htpb]
     \begin{center}
         \includegraphics[width=0.8\textwidth]{user/group}
         \caption{Ryhmän jäsenyys -välilehti}
         \label{fig:group}
     \end{center}
-\end{figure}   
+\end{figure}
 
 
 \end{document}
