@@ -41,3 +41,4 @@ Pvm     Teht                            Min
 8.7.19  Ylläpito                        120
 8.7.19  Työohjelmat                     50
 10.7.19 Ulkoasun kustomointi            60
+26.7.19 edistymisraportti               40
