@@ -42,3 +42,4 @@ Pvm     Teht                            Min
 8.7.19  Työohjelmat                     50
 10.7.19 Ulkoasun kustomointi            60
 26.7.19 edistymisraportti               40
+02.8.19 Oikoluku ja tekstin korjailu    30

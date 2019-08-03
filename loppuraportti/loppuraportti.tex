@@ -1,0 +1,100 @@
+\documentclass[a4paper, 12pt, finnish]{article}
+\usepackage{babel}
+\usepackage{afterpage}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{eurosym}
+\usepackage[section]{placeins}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{lipsum}
+\usepackage{changepage}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[backend=bibtex]{biblatex}
+\def\UrlBreaks{\do\/\do-} %% Line breakit urleissa
+\graphicspath{{./figures/}} % Kuvien lähde
+
+\title{MX Linux 18 käyttöönotto, käyttö ja ohjeistus \\ \large Loppuraportti} %% \large == alaotsikko
+\author{Iiro Aarnio \\ Tampereen seudun ammattiopisto \\}
+
+\begin{document}
+
+%% Kansisivu
+%% Lisää pvm mm.
+\maketitle
+\thispagestyle{empty} % Ei näytä sivunumeroa tällä sivulla
+
+\newpage
+\thispagestyle{empty}
+\begin{table}[htpb]
+	\begin{tabular}{llll}
+		Versiohistoria &            &                         &             \\
+		\rowcolor[HTML]{FFCCC9}
+		Versio         & Päivämäärä & Muutosperuste           & Tekijä      \\
+		1.0              & 3.8.2019   & Dokumentti valmis       & Iiro Aarnio \\
+	\end{tabular}
+\end{table}
+
+
+\newpage
+\thispagestyle{empty} % Ei näytä sivunumeroa tällä sivul6la
+
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic} %% resettaa sivunro lask
+
+\setcounter{page}{1} % Sisällysluettelo aloittaa laskennan tältä sivulta
+\newpage
+\section{Taustaa}
+
+\begin{adjustwidth}{0.25\textwidth}{}
+    Projektin tehtävänä oli luoda käyttöopas GNU/Linux-jakelusta ja harjoitella samalla projektityöskentelyä.
+\end{adjustwidth}
+\section{Saavutetut tulokset}
+
+\begin{adjustwidth}{0.25\textwidth}{}
+    Käyttöopas ja muut tarvittavat dokumentit saatiin tehtyä. Opas sisältää suunnitellut asiat.
+\end{adjustwidth}
+
+\section{Työn eteneminen}
+
+\begin{adjustwidth}{0.25\textwidth}{}
+    Käyttöoppaan suunnittelua varten tehtiin sisällysluettelosuunnitelmaa, joka oli suuntaa-antava.
+    Lisäksi työaika aikataulutettiin. Kyseessäolevaa jakelua alettiin opiskella, jonka jälkeen alettiin rakentaa opasta palasista.
+
+\end{adjustwidth}
+
+\section{Kustannukset}
+
+\begin{adjustwidth}{0.25\textwidth}{}
+    Projektista ei tullut kustannuksia, kuten suunniteltu.
+\end{adjustwidth}
+
+\section{Resurssien käyttö}
+
+\begin{table}[htpb]
+\centering
+\label{tab:tyo}
+\begin{tabular}{lll}
+\textbf{Resurssi}                & \textbf{Suunniteltu työmäärä} & \textbf{Toteutunut työmäärä} \\ \hline
+\multicolumn{1}{l|}{Iiro Aarnio} & 120,5                         & 47
+\end{tabular}
+\end{table}
+
+\section{Kokemukset}
+
+\begin{adjustwidth}{0.25\textwidth}{}
+    Aikataulutus oli turhan löysä. Paremmalla aikataulukuksella olisi voinut saada paremman lopputuloksen. Lopputulokseen kuitenkin ollaan tyytyväisiä ja työskentely on ollut opettavaista.
+\end{adjustwidth}
+\end{document}
