@@ -1,45 +1,46 @@
-Pvm     Teht                            Min
-3.6.19	Projektiesityksen laatiminen    60
-3.6.19  Pro.suunnitelman laatimista     100
-4.6.19  Pro.suunnitelman viimeistely    90
-6.6.19  Palaverimuistion laatiminen x2  50
-6.6.19  Aikataulutuksen aloittaminen    100
-7.6.19  Aikataulun viimeistely          100
-7.6.19  Sis.luettelosuunnitelman teko   90
-11.6.19 Sis.luettelosuunnitelman teko   40
-12.6.19 Oppaan aloitus, kansi+tiivist.  50
-12.6.19	Kansisivun viimeistely		20
-12.6.19	MX Linux esittely aloitus       40
-12.6.19	Testiasennus, jakeluun tutust.  60
-17.6.19 Jakelun tutkimista ja asennus   50
-18.6.19 Asennusvaiheen kuvankaappaukset 30
-18.6.19 Asennukse. kirjoit. 2.1 ja 2.2  50
-18.6.19 Jakelun opiskelua itsenäisesti  90
-18.6.19 Asennukse. kirjoit. 2.3 ja 2.4  70
-19.6.19         SAIRAANA                x
-20.6.19         SAIRAANA                x
-21.6.19 tekstin korjailua, kuvien aset. 30
-21.6.19 Osiointi tekstiä auto ja man.   120
-21.6.19 Kuvien asettelu ja editointi    60
-21.6.19 Asettelukorjauksia              40
-23.6.19 Root osiost akirjoittaminen     70
-24.6.19 Yksilöinti ja osiointi tekstiä  60
-24.6.19 Asennus kirjoitettu loppuun     50
-24.6.19 Peruskäytöstä kirjoittaminen    40
-25.6.19 Peruskäytöstä kirjt. uusia kuv. 120
-25.6.19 peruskäytöstä kirjoit. synap    120
-26.6.19 Jakelun käyttöön tutustuminen   120
-26.6.19 tekstin korjailua  synap        120
-27.6.19 apt tekstiä ja kuvien uusimisia 180
-28.9.19 Oppaan oikoluku                 10
-28.9.19 Suunnittelutyö ja kuvien muokk. 130
-28.9.19 Oppaan fixailua (järjestys yms) 20
-28.9.19 Opasvideoiden katselu jakelusta 60
-28.9.19 edistymisraportti               40
-8.7.19  Päivitys, korjauksia            60
-8.7.19  Kuvien muokkausten korjauksia   30
-8.7.19  Ylläpito                        120
-8.7.19  Työohjelmat                     50
-10.7.19 Ulkoasun kustomointi            60
-26.7.19 edistymisraportti               40
-02.8.19 Oikoluku ja tekstin korjailu    30
+Pvm    Teht                           Min    
+3.6.19Projektiesityksen laatiminen         60
+3.6.19 Pro.suunnitelman laatimista        100
+4.6.19 Pro.suunnitelman viimeistely        90
+6.6.19 Palaverimuistion laatiminen x2      50
+6.6.19 Aikataulutuksen aloittaminen       100
+7.6.19 Aikataulun viimeistely             100
+7.6.19 Sis.luettelosuunnitelman teko       90
+11.6.1 Sis.luettelosuunnitelman teko       40
+12.6.1 Oppaan aloitus, kansi+tiivist.      50
+12.6.1 Kansisivun viimeistely              20
+12.6.1	MX Linux esittely aloitus           40
+12.6.1	Testiasennus, jakeluun tutust.      60
+17.6.1 Jakelun tutkimista ja asennus       50
+18.6.1 Asennusvaiheen kuvankaappaukse      30
+18.6.1 Asennukse. kirjoit. 2.1 ja 2.2      50
+18.6.1 Jakelun opiskelua itsenäisesti      90
+18.6.1 Asennukse. kirjoit. 2.3 ja 2.4      70
+19.6.1         SAIRAANA               x      
+20.6.1         SAIRAANA               x      
+21.6.1 tekstin korjailua, kuvien aset      30
+21.6.1 Osiointi tekstiä auto ja man.      120
+21.6.1 Kuvien asettelu ja editointi        60
+21.6.1 Asettelukorjauksia                  40
+23.6.1 Root osiost akirjoittaminen         70
+24.6.1 Yksilöinti ja osiointi tekstiä      60
+24.6.1 Asennus kirjoitettu loppuun         50
+24.6.1 Peruskäytöstä kirjoittaminen        40
+25.6.1 Peruskäytöstä kirjt. uusia kuv     120
+25.6.1 peruskäytöstä kirjoit. synap       120
+26.6.1 Jakelun käyttöön tutustuminen      120
+26.6.1 tekstin korjailua  synap           120
+27.6.1 apt tekstiä ja kuvien uusimisi     180
+28.9.1 Oppaan oikoluku                     10
+28.9.1 Suunnittelutyö ja kuvien muokk     130
+28.9.1 Oppaan fixailua (järjestys yms      20
+28.9.1 Opasvideoiden katselu jakelust      60
+28.9.1 edistymisraportti                   40
+8.7.19 Päivitys, korjauksia                60
+8.7.19 Kuvien muokkausten korjauksia       30
+8.7.19 Ylläpito                           120
+8.7.19 Työohjelmat                         50
+10.7.1 Ulkoasun kustomointi                60
+26.7.1 edistymisraportti                   40
+02.8.1 Oikoluku ja tekstin korjailu        30
+                                         2630
